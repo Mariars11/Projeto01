@@ -1,7 +1,7 @@
 //Nome Completo: Maria Clara Rodrigues Silva  Matrícula: UC21100014  Curso: Engenharia de Software
 #include <stdio.h> //biblioteca para uso de printf e scanf
 #include <locale.h> //biblioteca que permite a acentuação dentro do printf
-#include <string.h> //biblioteca para (strlen-Determina o tamanho de uma string) (strcmp-)
+#include <string.h> //biblioteca para (strlen-Determina o tamanho de uma string) 
 #include <stdlib.h> //biblioteca responsável pelo comando system();
 #include <ctype.h> //biblioteca para o uso do toupper
 
@@ -66,13 +66,13 @@ int main () //função main
 		   if (idade >= 3 && idade <= 13){ //restrição da variavel criança
 	  	   crianca = crianca + 1; //somar a variavel cada vez a condição for validada 
 	        }
-	        if (idade >= 14 && idade <= 17){  //restrição da variavel adolescente
+	       else if (idade >= 14 && idade <= 17){  //restrição da variavel adolescente
 	     	adolescente = adolescente + 1;  //somar a variavel cada vez a condição for validada 
 	        }
-	        if (idade >= 18 && idade <= 64){  //restrição da variavel adulto
+	       else if (idade >= 18 && idade <= 64){  //restrição da variavel adulto
 	    	 adulto = adulto + 1;  //somar a variavel cada vez a condição for validada 
 		    }
-	        if (idade >= 65 && idade <= 100){  //restrição da variavel idoso
+	       else if (idade >= 65 && idade <= 100){  //restrição da variavel idoso
 	     	 idoso = idoso + 1; //somar a variavel cada vez a condição for validada 
 		    } 
 		do{
@@ -84,14 +84,14 @@ int main () //função main
 		   if (sexo == 'F'){ //identificar o sexo atraves da resposta do usuario
 	    	feminino = feminino + 1; //permite a contagem do numeros de pessoas do sexo feminino
 		    }
-		    if (sexo == 'M'){ //identificar o sexo atraves da resposta do usuario
+		   else if (sexo == 'M'){ //identificar o sexo atraves da resposta do usuario
 	       masculino = masculino + 1;  //permite a contagem do numeros de pessoas do sexo masculino
 	        }   
 	
-            if (idade >=18 && sexo == 'F'){ //identificar se é do sexo feminino e maior de idade
+           if (idade >=18 && sexo == 'F'){ //identificar se é do sexo feminino e maior de idade
 		     maiorFem = maiorFem + 1; //somar a variavel cada vez a condição for validada 
 	         }
-	        if (idade >= 18 && sexo == 'M'){ //identificar se é do sexo masculino e maior de idade
+	       else if (idade >= 18 && sexo == 'M'){ //identificar se é do sexo masculino e maior de idade
 	     	maiorMasc = maiorMasc + 1; //somar a variavel cada vez a condição for validada 
 	        }
 	}
@@ -109,7 +109,7 @@ int main () //função main
 	  printf("Quantidade de crianças que assistiram esse filme: %d\n", crianca); //dado da idade criança
 	  printf("Quantidade de adolescentes que assistiram esse filme: %d\n", adolescente); //dado da idade adolescente
 	  printf("Quantidade de adultos que assistiram esse filme: %d\n", adulto); //dado da idade adulto
-	  printf("Quantidade de idoso que assistiram esse filme: %d\n", idoso); //dado da idade idoso
+	  printf("Quantidade de idosos que assistiram esse filme: %d\n", idoso); //dado da idade idoso
 	  //Segunda apresentação dos dados, para que não fosse automatizada a limpeza da janela, utilizei o system ("pause");
 	  system("pause"); //fará o usuario pressionar uma tecla para prosseguir, de forma que a tela não será limpa automaticamente
 	  system ("cls");  //limpeza da janela
