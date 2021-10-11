@@ -4,4 +4,4 @@
 
 ### + Auxiliar o cinema a identificar o perfil das pessoas que frequentam suas sessões
 
-### +Uso de algumas validações para não permitir ações errôneas do usuário
+### + Uso de algumas validações para não permitir ações errôneas do usuário
